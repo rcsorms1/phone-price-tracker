@@ -1,0 +1,16 @@
+{
+  "name": "phone-price-tracker",
+  "version": "1.0.0",
+  "description": "폰브라운 휴대폰 정책 가격 추적기",
+  "main": "scripts/crawler.js",
+  "scripts": {
+    "crawl": "node scripts/crawler.js",
+    "serve": "npx serve ."
+  },
+  "dependencies": {
+    "playwright": "^1.40.0"
+  },
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}
