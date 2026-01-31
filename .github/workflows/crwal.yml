@@ -2,7 +2,7 @@ name: 폰브라운 가격 크롤링
 
 on:
   schedule:
-    - cron: '0 1 * * *'
+    - cron: '30 8 * * *'
   workflow_dispatch:
   push:
     branches:
