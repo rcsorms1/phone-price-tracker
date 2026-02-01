@@ -396,7 +396,7 @@
 
     <!-- 오늘의 가격 테이블 -->
     <section class="price-section">
-      <h2 class="section-title">💰 오늘의 가격</h2>
+      <h2 class="section-title">💰 오늘의 가격 (1/31)</h2>
       <div class="price-table" id="priceTable">
         <div class="price-row price-row-header">
           <div>통신사</div>
@@ -636,9 +636,9 @@
       if (!selectedModel) return;
 
       const table = document.getElementById('priceTable');
-      const today = priceData.history.filter(i => i.model === selectedModel);
+      const modelData = priceData.history.filter(i => i.model === selectedModel);
       
-      if (!today.length) {
+      if (!modelData.length) {
         table.innerHTML = `
           <div class="price-row price-row-header">
             <div>통신사</div>
@@ -651,6 +651,16 @@
         `;
         return;
       }
+
+      // 가장 최신 날짜 찾기
+      const dates = [...new Set(modelData.map(i => i.date))].sort();
+      const latestDate = dates[dates.length - 1];
+      const today = modelData.filter(i => i.date === latestDate);
+      
+      // 날짜 표시 업데이트
+      const dateObj = new Date(latestDate);
+      const dateStr = (dateObj.getMonth() + 1) + '/' + dateObj.getDate();
+      document.querySelector('.price-section .section-title').textContent = '💰 오늘의 가격 (' + dateStr + ')';
 
       // 통신사별 정리
       const carriers = ['SKT', 'KT', 'LGU+'];
