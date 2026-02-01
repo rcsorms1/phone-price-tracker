@@ -1,6 +1,6 @@
 const { chromium } = require('playwright');
-const fs = require(‘fs’);
-const path = require(‘path’);
+const fs = require('fs');
+const path = require('path');
 
 const CHANNEL_URL = ‘https://pf.kakao.com/_xoLhxcs’;
 const DATA_FILE = path.join(__dirname, ‘..’, ‘data’, ‘prices.json’);
