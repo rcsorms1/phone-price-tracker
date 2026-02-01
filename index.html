@@ -324,6 +324,22 @@
       color: var(--text-muted);
     }
 
+    /* 날짜 선택 */
+    .date-select {
+      padding: 8px 12px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text-primary);
+      font-size: 13px;
+      font-family: inherit;
+      cursor: pointer;
+      outline: none;
+    }
+    .date-select:focus {
+      border-color: var(--accent);
+    }
+
     @media (max-width: 768px) {
       .header-inner { flex-direction: column; gap: 12px; }
       .filter-bar { flex-direction: column; }
@@ -362,8 +378,7 @@
         <button class="filter-btn" data-type="기변">기변</button>
       </div>
       <div class="filter-group" id="carrierFilter">
-        <button class="filter-btn active" data-carrier="all">전체</button>
-        <button class="filter-btn skt" data-carrier="SKT">SKT</button>
+        <button class="filter-btn skt active" data-carrier="SKT">SKT</button>
         <button class="filter-btn kt" data-carrier="KT">KT</button>
         <button class="filter-btn lgu" data-carrier="LGU+">LG U+</button>
       </div>
@@ -396,7 +411,12 @@
 
     <!-- 오늘의 가격 테이블 -->
     <section class="price-section">
-      <h2 class="section-title">💰 오늘의 가격 (1/31)</h2>
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+        <h2 class="section-title" style="margin-bottom:0;">💰 가격표</h2>
+        <select id="dateSelect" class="date-select">
+          <option value="">날짜 선택</option>
+        </select>
+      </div>
       <div class="price-table" id="priceTable">
         <div class="price-row price-row-header">
           <div>통신사</div>
@@ -417,15 +437,15 @@
     let priceData = { history: [] };
     let selectedModel = null;
     let selectedType = '이동';
-    let selectedCarrier = 'all';
+    let selectedCarrier = 'SKT';
     let selectedPeriod = 7;
+    let selectedDate = null;
     let chart = null;
 
     const carrierColors = {
       'SKT': '#e42c2c',
       'KT': '#666666',
-      'LGU+': '#e91e8c',
-      'all': '#6366f1'
+      'LGU+': '#e91e8c'
     };
 
     // 가격 포맷
@@ -500,9 +520,28 @@
       if (!selectedModel && models.length) {
         selectedModel = models[0];
         renderModels();
+        updateDateSelect();
         updateChart();
         updateTable();
       }
+    }
+
+    // 날짜 선택 드롭다운 업데이트
+    function updateDateSelect() {
+      const allDates = [...new Set(priceData.history.map(i => i.date))].sort().reverse();
+      const select = document.getElementById('dateSelect');
+      
+      select.innerHTML = allDates.map(date => {
+        const d = new Date(date);
+        const label = (d.getMonth() + 1) + '/' + d.getDate();
+        return '<option value="' + date + '">' + label + '</option>';
+      }).join('');
+      
+      // 최신 날짜 자동 선택
+      if (!selectedDate && allDates.length) {
+        selectedDate = allDates[0];
+      }
+      select.value = selectedDate;
     }
 
     // 차트 업데이트
@@ -652,15 +691,10 @@
         return;
       }
 
-      // 가장 최신 날짜 찾기
+      // 선택된 날짜 또는 최신 날짜 사용
       const dates = [...new Set(modelData.map(i => i.date))].sort();
-      const latestDate = dates[dates.length - 1];
-      const today = modelData.filter(i => i.date === latestDate);
-      
-      // 날짜 표시 업데이트
-      const dateObj = new Date(latestDate);
-      const dateStr = (dateObj.getMonth() + 1) + '/' + dateObj.getDate();
-      document.querySelector('.price-section .section-title').textContent = '💰 오늘의 가격 (' + dateStr + ')';
+      const targetDate = selectedDate || dates[dates.length - 1];
+      const dayData = modelData.filter(i => i.date === targetDate);
 
       // 통신사별 정리
       const carriers = ['SKT', 'KT', 'LGU+'];
@@ -673,8 +707,8 @@
       `;
 
       carriers.forEach(carrier => {
-        const 이동 = today.find(i => i.carrier === carrier && i.type === '이동');
-        const 기변 = today.find(i => i.carrier === carrier && i.type === '기변');
+        const 이동 = dayData.find(i => i.carrier === carrier && i.type === '이동');
+        const 기변 = dayData.find(i => i.carrier === carrier && i.type === '기변');
         
         if (!이동 && !기변) return;
 
@@ -726,6 +760,11 @@
         e.target.classList.add('active');
         selectedPeriod = e.target.dataset.period === 'all' ? 'all' : parseInt(e.target.dataset.period);
         updateChart();
+      };
+
+      document.getElementById('dateSelect').onchange = e => {
+        selectedDate = e.target.value;
+        updateTable();
       };
     }
 
