@@ -3205,8 +3205,498 @@
       "carrier": "LGU+",
       "type": "기변",
       "price": 1010000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 S25",
+      "carrier": "SKT",
+      "type": "이동",
+      "price": 10000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 S25",
+      "carrier": "SKT",
+      "type": "기변",
+      "price": 170000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 S25+",
+      "carrier": "SKT",
+      "type": "이동",
+      "price": 250000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 S25+",
+      "carrier": "SKT",
+      "type": "기변",
+      "price": 390000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 S25 울트라",
+      "carrier": "SKT",
+      "type": "이동",
+      "price": 600000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 S25 울트라",
+      "carrier": "SKT",
+      "type": "기변",
+      "price": 720000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 S25 엣지",
+      "carrier": "SKT",
+      "type": "이동",
+      "price": 260000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 S25 엣지",
+      "carrier": "SKT",
+      "type": "기변",
+      "price": 370000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 Z플립7",
+      "carrier": "SKT",
+      "type": "이동",
+      "price": 240000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 Z플립7",
+      "carrier": "SKT",
+      "type": "기변",
+      "price": 420000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 Z폴드7",
+      "carrier": "SKT",
+      "type": "이동",
+      "price": 1220000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 Z폴드7",
+      "carrier": "SKT",
+      "type": "기변",
+      "price": 1280000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 Z플립6",
+      "carrier": "SKT",
+      "type": "이동",
+      "price": 210000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 Z플립6",
+      "carrier": "SKT",
+      "type": "기변",
+      "price": 520000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰17",
+      "carrier": "SKT",
+      "type": "이동",
+      "price": 250000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰17",
+      "carrier": "SKT",
+      "type": "기변",
+      "price": 520000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰17 에어",
+      "carrier": "SKT",
+      "type": "이동",
+      "price": 540000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰17 에어",
+      "carrier": "SKT",
+      "type": "기변",
+      "price": 790000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰17 프로",
+      "carrier": "SKT",
+      "type": "이동",
+      "price": 750000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰17 프로",
+      "carrier": "SKT",
+      "type": "기변",
+      "price": 1020000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰17 프로맥스",
+      "carrier": "SKT",
+      "type": "이동",
+      "price": 1220000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰17 프로맥스",
+      "carrier": "SKT",
+      "type": "기변",
+      "price": 1440000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 S25",
+      "carrier": "KT",
+      "type": "이동",
+      "price": -180000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 S25",
+      "carrier": "KT",
+      "type": "기변",
+      "price": -60000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 S25 울트라",
+      "carrier": "KT",
+      "type": "이동",
+      "price": 440000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 S25 울트라",
+      "carrier": "KT",
+      "type": "기변",
+      "price": 580000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 S25 엣지",
+      "carrier": "KT",
+      "type": "이동",
+      "price": 100000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 S25 엣지",
+      "carrier": "KT",
+      "type": "기변",
+      "price": 80000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 Z플립7",
+      "carrier": "KT",
+      "type": "이동",
+      "price": 120000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 Z플립7",
+      "carrier": "KT",
+      "type": "기변",
+      "price": 140000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 Z폴드7",
+      "carrier": "KT",
+      "type": "이동",
+      "price": 1110000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 Z폴드7",
+      "carrier": "KT",
+      "type": "기변",
+      "price": 1130000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 Z플립6",
+      "carrier": "KT",
+      "type": "이동",
+      "price": -240000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 Z플립6",
+      "carrier": "KT",
+      "type": "기변",
+      "price": -120000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰17",
+      "carrier": "KT",
+      "type": "이동",
+      "price": 110000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰17",
+      "carrier": "KT",
+      "type": "기변",
+      "price": 230000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰17 에어",
+      "carrier": "KT",
+      "type": "이동",
+      "price": 410000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰17 에어",
+      "carrier": "KT",
+      "type": "기변",
+      "price": 530000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰17 프로",
+      "carrier": "KT",
+      "type": "이동",
+      "price": 610000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰17 프로",
+      "carrier": "KT",
+      "type": "기변",
+      "price": 750000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰17 프로맥스",
+      "carrier": "KT",
+      "type": "이동",
+      "price": 1050000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰17 프로맥스",
+      "carrier": "KT",
+      "type": "기변",
+      "price": 1190000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰16",
+      "carrier": "KT",
+      "type": "이동",
+      "price": -420000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰16",
+      "carrier": "KT",
+      "type": "기변",
+      "price": -260000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 S25",
+      "carrier": "LGU+",
+      "type": "이동",
+      "price": -320000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 S25",
+      "carrier": "LGU+",
+      "type": "기변",
+      "price": -190000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 S25 울트라",
+      "carrier": "LGU+",
+      "type": "이동",
+      "price": 320000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 S25 울트라",
+      "carrier": "LGU+",
+      "type": "기변",
+      "price": 450000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 S25 엣지",
+      "carrier": "LGU+",
+      "type": "이동",
+      "price": -110000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 S25 엣지",
+      "carrier": "LGU+",
+      "type": "기변",
+      "price": 20000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 Z플립7",
+      "carrier": "LGU+",
+      "type": "이동",
+      "price": -60000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 Z플립7",
+      "carrier": "LGU+",
+      "type": "기변",
+      "price": -90000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 Z폴드7",
+      "carrier": "LGU+",
+      "type": "이동",
+      "price": 940000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 Z폴드7",
+      "carrier": "LGU+",
+      "type": "기변",
+      "price": 920000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 Z플립6",
+      "carrier": "LGU+",
+      "type": "이동",
+      "price": -160000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "갤럭시 Z플립6",
+      "carrier": "LGU+",
+      "type": "기변",
+      "price": 170000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰17",
+      "carrier": "LGU+",
+      "type": "이동",
+      "price": -200000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰17",
+      "carrier": "LGU+",
+      "type": "기변",
+      "price": 210000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰17 에어",
+      "carrier": "LGU+",
+      "type": "이동",
+      "price": -260000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰17 에어",
+      "carrier": "LGU+",
+      "type": "기변",
+      "price": 500000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰17 프로",
+      "carrier": "LGU+",
+      "type": "이동",
+      "price": 300000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰17 프로",
+      "carrier": "LGU+",
+      "type": "기변",
+      "price": 700000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰17 프로맥스",
+      "carrier": "LGU+",
+      "type": "이동",
+      "price": 850000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰17 프로맥스",
+      "carrier": "LGU+",
+      "type": "기변",
+      "price": 1150000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰16",
+      "carrier": "LGU+",
+      "type": "이동",
+      "price": -170000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰16",
+      "carrier": "LGU+",
+      "type": "기변",
+      "price": 340000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰16 프로",
+      "carrier": "LGU+",
+      "type": "이동",
+      "price": 510000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰16 프로",
+      "carrier": "LGU+",
+      "type": "기변",
+      "price": 630000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰16 프로맥스",
+      "carrier": "LGU+",
+      "type": "이동",
+      "price": 890000
+    },
+    {
+      "date": "2026-02-06",
+      "model": "아이폰16 프로맥스",
+      "carrier": "LGU+",
+      "type": "기변",
+      "price": 1010000
     }
   ],
-  "lastUpdated": "2026-02-05T09:11:11.026Z",
+  "lastUpdated": "2026-02-06T09:09:51.371Z",
   "source": "폰브라운"
 }
